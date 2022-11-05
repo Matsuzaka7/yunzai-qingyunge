@@ -12,7 +12,7 @@
 
 ```git
 // 使用github
-git clone https://github.com/Matsuzaka7/yunzai-qingyunge.git .plugins/example
+git clone https://github.com/Matsuzaka7/yunzai-qingyunge.git ./plugins/example
 ```
 
 #### 方式二：直接下载压缩包
