@@ -19,7 +19,7 @@ export class qingyunge_message extends plugin {
   	if (this.e.message[0].type === 'at' && this.e.message[0].qq == this.e.self_id) {
       // 当艾特了，但没有说话时 回复这个
   		if (this.e.message.length === 1 || (this.e.message[1] && this.e.message[1].text == '')) {
-  			await this.reply([segment.at(this.e.user_id), ' 哎呀 你干嘛~', segment.image(this.getEmoji())])
+  			await this.reply([segment.at(this.e.user_id), ' 哎呀 你干嘛~', segment.image(this.getImg())])
 				return
   		}
   		// 艾特后面的内容有值，就执行回复方法
@@ -52,14 +52,14 @@ export class qingyunge_message extends plugin {
   		}
   }
   // 获取随机表情包
-	getEmoji = () => {
+	getImg = () => {
 		// 当指令后没有跟数据，随机返回此数组里面的一句话
-		var text = [ "https://c2cpicdw.qpic.cn/offpic_new/1678800780//1678800780-2229448361-C4D4506256984E0951AE70EF2D39C7AF/0?term=2",
+		const imgArray = [ "https://c2cpicdw.qpic.cn/offpic_new/1678800780//1678800780-2229448361-C4D4506256984E0951AE70EF2D39C7AF/0?term=2",
 			"https://c2cpicdw.qpic.cn/offpic_new/1678800780//1678800780-4170714532-4E83609698BC1753845AA0BE8D66051D/0?term=2",
 			"https://c2cpicdw.qpic.cn/offpic_new/1678800780//1678800780-3888586142-E9BD0789F60B2045ECBA19E36DD25EC7/0?term=2",
 			"https://c2cpicdw.qpic.cn/offpic_new/1678800780//1678800780-2518379710-D757D5240D4B157D098B1719921969A1/0?term=2"
 		];
-		return text[Math.round( Math.random() * text.length - 1 )];
+		return imgArray[Math.round( Math.random() * imgArray.length - 1 )];
 	}
 }
 
