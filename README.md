@@ -2,7 +2,7 @@
 
 **仅适配 YunzaiV3**
 
-请将 `青云阁接口机器人.js` 文件放置在Yunzai-Bot的 `plugins/example` 目录下，重启Yunzai-Bot后即可使用。
+请将 `青云阁接口机器人.js` 文件放置在Yunzai-Bot的 `plugins/example` 目录下，无需重启可直接使用。
 
 ****
 
@@ -17,7 +17,7 @@ git clone https://github.com/Matsuzaka7/yunzai-qingyunge.git ./plugins/example
 
 #### 方式二：直接下载压缩包
 
-下载完毕后直接复制到 Yunzai-Bot的 `plugins/example` 目录下，重启Yunzai-Bot后即可使用
+下载完毕后直接复制到 Yunzai-Bot的 `plugins/example` 目录下，无需重启可直接使用
 
 ****
 
